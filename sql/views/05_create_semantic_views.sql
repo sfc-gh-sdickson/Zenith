@@ -297,10 +297,10 @@ CREATE OR REPLACE SEMANTIC VIEW SV_CLAIMS_MEDICAL_INTELLIGENCE
     claims.total_indemnity_paid AS SUM(indemnity_paid)
       WITH SYNONYMS ('total indemnity costs', 'aggregate wage loss payments')
       COMMENT = 'Total indemnity (lost wages) paid',
-    claims.total_incurred AS SUM(total_incurred)
+    claims.total_incurred_amount AS SUM(total_incurred)
       WITH SYNONYMS ('total claim costs', 'aggregate incurred costs', 'total losses')
       COMMENT = 'Total incurred costs (medical + indemnity)',
-    claims.avg_incurred_per_claim AS AVG(claims.TOTAL_INCURRED)
+    claims.avg_incurred_per_claim AS AVG(claims.total_incurred)
       WITH SYNONYMS ('average claim cost', 'mean claim severity')
       COMMENT = 'Average incurred cost per claim',
     claims.total_reserved AS SUM(total_reserved)
