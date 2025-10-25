@@ -247,9 +247,6 @@ CREATE OR REPLACE SEMANTIC VIEW SV_CLAIMS_MEDICAL_INTELLIGENCE
     claims.litigated AS litigated
       WITH SYNONYMS ('in litigation', 'attorney involved', 'disputed claim')
       COMMENT = 'Whether claim is in litigation',
-    claims.total_incurred AS TOTAL_INCURRED
-      WITH SYNONYMS ('raw incurred amount')
-      COMMENT = 'Raw total incurred amount from claims table',
     injured_workers.worker_name AS worker_name
       WITH SYNONYMS ('claimant name', 'injured employee name')
       COMMENT = 'Name of injured worker',
@@ -303,7 +300,7 @@ CREATE OR REPLACE SEMANTIC VIEW SV_CLAIMS_MEDICAL_INTELLIGENCE
     claims.total_incurred AS SUM(total_incurred)
       WITH SYNONYMS ('total claim costs', 'aggregate incurred costs', 'total losses')
       COMMENT = 'Total incurred costs (medical + indemnity)',
-    claims.avg_incurred_per_claim AS AVG(total_incurred)
+    claims.avg_incurred_per_claim AS AVG(claims.TOTAL_INCURRED)
       WITH SYNONYMS ('average claim cost', 'mean claim severity')
       COMMENT = 'Average incurred cost per claim',
     claims.total_reserved AS SUM(total_reserved)
