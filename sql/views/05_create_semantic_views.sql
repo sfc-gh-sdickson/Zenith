@@ -247,6 +247,9 @@ CREATE OR REPLACE SEMANTIC VIEW SV_CLAIMS_MEDICAL_INTELLIGENCE
     claims.litigated AS litigated
       WITH SYNONYMS ('in litigation', 'attorney involved', 'disputed claim')
       COMMENT = 'Whether claim is in litigation',
+    claims.total_incurred AS TOTAL_INCURRED
+      WITH SYNONYMS ('raw incurred amount')
+      COMMENT = 'Raw total incurred amount from claims table',
     injured_workers.worker_name AS worker_name
       WITH SYNONYMS ('claimant name', 'injured employee name')
       COMMENT = 'Name of injured worker',
