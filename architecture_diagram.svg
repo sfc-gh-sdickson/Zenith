@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="500" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#333">
+    Zenith Insurance Intelligence Agent Architecture
+  </text>
+  
+  <!-- Layer 1: Intelligence Agent (Top - Blue) -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7ED321;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5FA319;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5A623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D68910;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9013FE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7010CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Layer 1: Snowflake Intelligence Agent -->
+  <rect x="100" y="60" width="800" height="100" fill="url(#blueGrad)" rx="10" stroke="#333" stroke-width="2"/>
+  <text x="500" y="95" font-size="20" font-weight="bold" text-anchor="middle" fill="white">
+    Snowflake Intelligence Agent
+  </text>
+  <text x="500" y="120" font-size="14" text-anchor="middle" fill="white">
+    Orchestrates Cortex Analyst (Structured) + Cortex Search (Unstructured)
+  </text>
+  <text x="500" y="140" font-size="12" text-anchor="middle" fill="white">
+    Routes queries | Combines insights | Conversational interface
+  </text>
+  
+  <!-- Arrows from Layer 1 to Layer 2 -->
+  <line x1="300" y1="160" x2="275" y2="210" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="160" x2="725" y2="210" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+      <polygon points="0 0, 10 5, 0 10" fill="#333" />
+    </marker>
+  </defs>
+  
+  <!-- Layer 2A: Cortex Analyst (Left - Green) -->
+  <rect x="50" y="210" width="450" height="200" fill="url(#greenGrad)" rx="10" stroke="#333" stroke-width="2"/>
+  <text x="275" y="240" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Cortex Analyst
+  </text>
+  <text x="275" y="260" font-size="14" text-anchor="middle" fill="white">
+    Structured Data Analysis via Semantic Views
+  </text>
+  
+  <!-- Semantic Views boxes -->
+  <rect x="70" y="275" width="130" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="135" y="295" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    SV_POLICY_
+  </text>
+  <text x="135" y="310" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    UNDERWRITING
+  </text>
+  <text x="135" y="330" font-size="10" text-anchor="middle" fill="#555">
+    • Employers
+  </text>
+  <text x="135" y="345" font-size="10" text-anchor="middle" fill="#555">
+    • Agents
+  </text>
+  <text x="135" y="360" font-size="10" text-anchor="middle" fill="#555">
+    • Policies
+  </text>
+  <text x="135" y="375" font-size="10" text-anchor="middle" fill="#555">
+    • Renewals
+  </text>
+  
+  <rect x="220" y="275" width="130" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="285" y="295" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    SV_CLAIMS_
+  </text>
+  <text x="285" y="310" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    MEDICAL
+  </text>
+  <text x="285" y="330" font-size="10" text-anchor="middle" fill="#555">
+    • Claims
+  </text>
+  <text x="285" y="345" font-size="10" text-anchor="middle" fill="#555">
+    • Workers
+  </text>
+  <text x="285" y="360" font-size="10" text-anchor="middle" fill="#555">
+    • Adjusters
+  </text>
+  <text x="285" y="375" font-size="10" text-anchor="middle" fill="#555">
+    • Costs & RTW
+  </text>
+  
+  <rect x="370" y="275" width="110" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="425" y="295" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    SV_LITIGATION_
+  </text>
+  <text x="425" y="310" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    DISPUTE
+  </text>
+  <text x="425" y="330" font-size="10" text-anchor="middle" fill="#555">
+    • Disputes
+  </text>
+  <text x="425" y="345" font-size="10" text-anchor="middle" fill="#555">
+    • Legal Costs
+  </text>
+  <text x="425" y="360" font-size="10" text-anchor="middle" fill="#555">
+    • Settlements
+  </text>
+  <text x="425" y="375" font-size="10" text-anchor="middle" fill="#555">
+    • Outcomes
+  </text>
+  
+  <!-- Layer 2B: Cortex Search (Right - Orange) -->
+  <rect x="520" y="210" width="430" height="200" fill="url(#orangeGrad)" rx="10" stroke="#333" stroke-width="2"/>
+  <text x="735" y="240" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    Cortex Search
+  </text>
+  <text x="735" y="260" font-size="14" text-anchor="middle" fill="white">
+    Unstructured Data Semantic Search (RAG)
+  </text>
+  
+  <!-- Cortex Search Services boxes -->
+  <rect x="540" y="275" width="125" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="602" y="295" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    CLAIM_NOTES
+  </text>
+  <text x="602" y="310" font-size="12" font-weight="bold" text-anchor="middle" fill="#333">
+    SEARCH
+  </text>
+  <text x="602" y="330" font-size="10" text-anchor="middle" fill="#555">
+    25,000 adjuster
+  </text>
+  <text x="602" y="345" font-size="10" text-anchor="middle" fill="#555">
+    notes & medical
+  </text>
+  <text x="602" y="360" font-size="10" text-anchor="middle" fill="#555">
+    reviews
+  </text>
+  
+  <rect x="685" y="275" width="125" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="747" y="290" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">
+    MEDICAL_
+  </text>
+  <text x="747" y="305" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">
+    GUIDELINES
+  </text>
+  <text x="747" y="325" font-size="10" text-anchor="middle" fill="#555">
+    3 evidence-based
+  </text>
+  <text x="747" y="340" font-size="10" text-anchor="middle" fill="#555">
+    treatment
+  </text>
+  <text x="747" y="355" font-size="10" text-anchor="middle" fill="#555">
+    protocols
+  </text>
+  
+  <rect x="830" y="275" width="105" height="120" fill="white" fill-opacity="0.9" rx="5" stroke="#333" stroke-width="1"/>
+  <text x="882" y="295" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">
+    SIU_
+  </text>
+  <text x="882" y="310" font-size="11" font-weight="bold" text-anchor="middle" fill="#333">
+    REPORTS
+  </text>
+  <text x="882" y="330" font-size="10" text-anchor="middle" fill="#555">
+    15,000 fraud
+  </text>
+  <text x="882" y="345" font-size="10" text-anchor="middle" fill="#555">
+    investigation
+  </text>
+  <text x="882" y="360" font-size="10" text-anchor="middle" fill="#555">
+    reports
+  </text>
+  
+  <!-- Arrows from Layer 2 to Layer 3 -->
+  <line x1="275" y1="410" x2="275" y2="460" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="735" y1="410" x2="735" y2="460" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Layer 3: RAW Schema (Bottom - Purple) -->
+  <rect x="50" y="460" width="900" height="300" fill="url(#purpleGrad)" rx="10" stroke="#333" stroke-width="2"/>
+  <text x="500" y="490" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+    RAW Schema - Source Data Layer
+  </text>
+  
+  <!-- Left column: Structured Tables -->
+  <text x="80" y="520" font-size="14" font-weight="bold" fill="white">
+    Structured Tables (2.5M records):
+  </text>
+  
+  <rect x="80" y="530" width="200" height="210" fill="white" fill-opacity="0.15" rx="5"/>
+  <text x="90" y="550" font-size="11" fill="white">• EMPLOYERS (25K)</text>
+  <text x="90" y="570" font-size="11" fill="white">• INJURED_WORKERS (250K)</text>
+  <text x="90" y="590" font-size="11" fill="white">• INSURANCE_AGENTS (10)</text>
+  <text x="90" y="610" font-size="11" fill="white">• POLICY_PRODUCTS (30)</text>
+  <text x="90" y="630" font-size="11" fill="white">• POLICIES_WRITTEN (500K)</text>
+  <text x="90" y="650" font-size="11" fill="white">• POLICY_RENEWALS (300K)</text>
+  <text x="90" y="670" font-size="11" fill="white">• PREMIUM_PAYMENTS (1M)</text>
+  <text x="90" y="690" font-size="11" fill="white">• SERVICE_CONTRACTS (15K)</text>
+  <text x="90" y="710" font-size="11" fill="white">• PROFESSIONAL_CREDENTIALS</text>
+  <text x="90" y="730" font-size="11" fill="white">  (40K)</text>
+  
+  <rect x="300" y="530" width="200" height="210" fill="white" fill-opacity="0.15" rx="5"/>
+  <text x="310" y="550" font-size="11" fill="white">• CLAIMS (75K)</text>
+  <text x="310" y="570" font-size="11" fill="white">• CLAIMS_ADJUSTERS (200)</text>
+  <text x="310" y="590" font-size="11" fill="white">• CLAIM_DISPUTES (25K)</text>
+  <text x="310" y="610" font-size="11" fill="white">• AGENT_PROGRAMS (100)</text>
+  <text x="310" y="630" font-size="11" fill="white">• AGENT_PARTICIPATION (3K)</text>
+  <text x="310" y="650" font-size="11" fill="white">• CREDENTIAL_</text>
+  <text x="310" y="670" font-size="11" fill="white">  VERIFICATIONS (45K)</text>
+  <text x="310" y="690" font-size="11" fill="white"></text>
+  <text x="310" y="710" font-size="11" font-weight="bold" fill="#FFD700">All relationships defined</text>
+  <text x="310" y="730" font-size="11" font-weight="bold" fill="#FFD700">with foreign keys</text>
+  
+  <!-- Right column: Unstructured Data -->
+  <text x="530" y="520" font-size="14" font-weight="bold" fill="white">
+    Unstructured Data (40K+ documents):
+  </text>
+  
+  <rect x="530" y="530" width="400" height="210" fill="white" fill-opacity="0.15" rx="5"/>
+  <text x="540" y="555" font-size="12" font-weight="bold" fill="#FFD700">CLAIM_NOTES</text>
+  <text x="540" y="575" font-size="11" fill="white">25,000 adjuster notes, medical reviews,</text>
+  <text x="540" y="595" font-size="11" fill="white">settlement discussions, RTW strategies</text>
+  
+  <text x="540" y="625" font-size="12" font-weight="bold" fill="#FFD700">MEDICAL_TREATMENT_GUIDELINES</text>
+  <text x="540" y="645" font-size="11" fill="white">3 comprehensive evidence-based protocols:</text>
+  <text x="540" y="665" font-size="11" fill="white">Low back, carpal tunnel, shoulder injuries</text>
+  
+  <text x="540" y="695" font-size="12" font-weight="bold" fill="#FFD700">SIU_INVESTIGATION_REPORTS</text>
+  <text x="540" y="715" font-size="11" fill="white">15,000 fraud investigation reports with</text>
+  <text x="540" y="735" font-size="11" fill="white">surveillance, medical provider fraud, patterns</text>
+  
+  <!-- Footer -->
+  <text x="500" y="785" font-size="10" text-anchor="middle" fill="#CCC">
+    Created: October 2025 | Template: Microchip Intelligence | Target: Zenith Insurance Workers' Compensation
+  </text>
+</svg>
+
